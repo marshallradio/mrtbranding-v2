@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marshall Radio Telemetry · Typography Lab v2</title>
+<style>
+@font-face {
+  font-family: "Matter";
+  src: url("fonts/Matter-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Matter";
+  src: url("fonts/Matter-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --blue: #1B3A6A;
+  --red: #8A2F1D;
+  --khaki: #C6C7BB;
+  --light: #F1F1F1;
+  --black: #171D1A;
+  --white: #FFFFFF;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Matter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--black);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+.wrap { max-width: 1100px; margin: 0 auto; padding: 0 40px; }
+header { padding: 48px 0 32px; border-bottom: 1px solid var(--light); }
+.logo-word { font-weight: 700; font-size: 28px; letter-spacing: -0.02em; color: var(--blue); }
+h1 { font-size: 72px; font-weight: 700; line-height: 0.95; letter-spacing: -0.035em; margin: 24px 0 12px; color: var(--blue); }
+.lead { font-size: 22px; font-weight: 500; line-height: 1.4; max-width: 720px; color: #333; }
+.eyebrow { font-weight: 700; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--red); margin: 0 0 8px; }
+section { padding: 64px 0; border-bottom: 1px solid var(--light); }
+h2 { font-size: 42px; font-weight: 700; letter-spacing: -0.025em; line-height: 1.1; margin: 0 0 24px; color: var(--blue); }
+h3 { font-size: 24px; font-weight: 700; letter-spacing: -0.01em; margin: 32px 0 12px; }
+.specimen { background: var(--light); border-radius: 12px; padding: 48px; margin: 24px 0; }
+.specimen.dark { background: var(--blue); color: var(--white); }
+.specimen.dark h2, .specimen.dark h3 { color: var(--white); }
+.big { font-size: 96px; font-weight: 700; line-height: 0.9; letter-spacing: -0.04em; margin: 0; }
+.medium { font-weight: 500; }
+.tight { letter-spacing: -0.03em; }
+.loose { letter-spacing: 0.02em; }
+.note { font-size: 15px; color: #555; margin-top: 8px; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+@media (max-width: 800px) { .grid { grid-template-columns: 1fr; } h1 { font-size: 48px; } .big { font-size: 64px; } }
+.compare { display: flex; gap: 40px; flex-wrap: wrap; }
+.compare > div { flex: 1; min-width: 280px; }
+footer { padding: 40px 0; font-size: 14px; color: #666; }
+a { color: var(--blue); }
+.warning { background: #E8D5D2; border-left: 4px solid var(--red); padding: 16px 20px; border-radius: 0 8px 8px 0; margin: 24px 0; }
+</style>
+</head>
+<body>
+<header class="wrap">
+  <div class="logo-word">Marshall Radio Telemetry</div>
+  <p class="eyebrow">Typography Lab · Version 2</p>
+  <h1>Matter, made vivid.</h1>
+  <p class="lead">Exploring the Medium (500) and Bold (700) faces. Tighter tracking on large type, stronger color contrast, and refined line-height make the brand feel sharper and more premium.</p>
+</header>
+
+<div class="wrap warning">
+  <strong>Fonts not yet loaded:</strong> Upload <code>Matter-Medium.woff</code> and <code>Matter-Bold.woff</code> into the <code>fonts/</code> folder of this repository, then refresh. WOFF is the correct web format (preferred over TTF/OTF).
+</div>
+
+<section class="wrap">
+  <h2>Display</h2>
+  <div class="specimen">
+    <p class="big">Reliable range.<br>Easy recovery.</p>
+    <p class="note">Bold 700 · -0.04em tracking · line-height 0.9 — tighter tracking on large sizes makes Matter feel more striking and modern.</p>
+  </div>
+  <div class="specimen dark">
+    <p class="big" style="color:#fff">The most carefully<br>engineered tracking.</p>
+    <p class="note" style="color:#C6C7BB">On M Blue background. Light Grey text for maximum contrast and vivid presence.</p>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>Weights</h2>
+  <div class="grid">
+    <div>
+      <h3 class="medium">Medium 500</h3>
+      <p class="medium" style="font-size:20px;line-height:1.5">Medium is excellent for body copy and UI. It has more presence than a true Regular while remaining readable. Pair it with Bold for hierarchy.</p>
+    </div>
+    <div>
+      <h3>Bold 700</h3>
+      <p style="font-size:20px;line-height:1.5;font-weight:700">Bold carries the brand voice for headings, buttons, and key statements. Use it sparingly so it stays powerful.</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>Spacing experiments</h2>
+  <div class="compare">
+    <div>
+      <h3 class="tight">Tighter tracking</h3>
+      <p style="font-size:28px;letter-spacing:-0.025em;line-height:1.25;font-weight:700">Getting the bird or dog back starts with reliable range.</p>
+      <p class="note">Recommended for headings ≥ 28px.</p>
+    </div>
+    <div>
+      <h3 class="loose">Slightly open</h3>
+      <p style="font-size:18px;letter-spacing:0.01em;line-height:1.65;font-weight:500">For body text, a modest positive tracking and 1.55–1.65 line-height keeps Medium comfortable and clear on screen.</p>
+      <p class="note">Body recommendation.</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>Color & contrast</h2>
+  <div class="specimen">
+    <p style="font-size:36px;font-weight:700;color:#1B3A6A;letter-spacing:-0.02em;margin:0">M Blue headings on white.</p>
+    <p style="font-size:20px;font-weight:500;color:#171D1A;line-height:1.55">Body in near-black. The combination is high-contrast and vivid without needing extra effects.</p>
+  </div>
+  <div class="specimen" style="background:#8A2F1D;color:#F1F1F1">
+    <p style="font-size:36px;font-weight:700;margin:0;letter-spacing:-0.02em">Accent on M Red</p>
+    <p style="font-size:18px;font-weight:500">Use sparingly for calls to action or section labels. Light Grey text keeps contrast strong.</p>
+  </div>
+</section>
+
+<section class="wrap">
+  <h2>Suggestions & next steps</h2>
+  <ul>
+    <li><strong>Why it may not look striking now:</strong> The original site uses <code>local()</code> only, so most visitors fall back to Helvetica/Arial. Hosting the actual Matter faces (as we are doing here) is the biggest improvement.</li>
+    <li><strong>Tracking:</strong> Negative letter-spacing on display sizes (-0.03 to -0.04em) makes Matter feel tighter and more premium. Avoid large positive tracking on headings.</li>
+    <li><strong>Line-height:</strong> 0.9–1.05 for large display, 1.5–1.65 for body.</li>
+    <li><strong>Color:</strong> Stick to M Blue (#1B3A6A) for headings and near-black for body. High contrast is more vivid than adding extra colors.</li>
+    <li><strong>Fonts:</strong> WOFF (or better, WOFF2) is the correct format for the web. Convert TTF/OTF at <a href="https://transfonter.org" target="_blank">transfonter.org</a> if needed. You mentioned 4 families — upload the others the same way.</li>
+    <li><strong>License:</strong> Confirm your Displaay license allows web embedding before making this public. The original site deliberately avoided hosting the files for this reason.</li>
+    <li>Original version remains untouched at <a href="https://github.com/marshallradio/mrtbranding">marshallradio/mrtbranding</a>.</li>
+  </ul>
+</section>
+
+<footer class="wrap">
+  <p>Marshall Radio Telemetry Typography Lab v2 · <a href="https://github.com/marshallradio/mrtbranding-v2">View source</a></p>
+</footer>
+</body>
+</html>
