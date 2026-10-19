@@ -3,30 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Marshall Radio Telemetry · Typography Lab v2</title>
+<title>Marshall Radio Telemetry · Typography</title>
 <style>
-/* Professional core set — MatterXH (proportional) */
 @font-face {
   font-family: "Matter";
   src: url("MatterXH-Regular.woff2") format("woff2"),
        url("MatterXH-Regular.woff") format("woff");
   font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Matter";
-  src: url("MatterXH-Medium.woff2") format("woff2"),
-       url("MatterXH-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Matter";
-  src: url("MatterXH-SemiBold.woff2") format("woff2"),
-       url("MatterXH-SemiBold.woff") format("woff");
-  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
@@ -41,7 +24,6 @@
 :root {
   --blue: #1B3A6A;
   --red: #8A2F1D;
-  --khaki: #C6C7BB;
   --light: #F1F1F1;
   --black: #171D1A;
   --white: #FFFFFF;
@@ -51,8 +33,8 @@ body {
   margin: 0;
   font-family: "Matter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.55;
+  font-size: 16px;
+  line-height: 1.6;
   color: var(--black);
   background: var(--white);
   -webkit-font-smoothing: antialiased;
@@ -60,107 +42,93 @@ body {
 }
 .wrap { max-width: 1100px; margin: 0 auto; padding: 0 40px; }
 header { padding: 48px 0 32px; border-bottom: 1px solid var(--light); }
-.logo-word { font-weight: 700; font-size: 28px; letter-spacing: -0.02em; color: var(--blue); }
-h1 { font-size: 72px; font-weight: 700; line-height: 0.95; letter-spacing: -0.035em; margin: 24px 0 12px; color: var(--blue); }
-.lead { font-size: 22px; font-weight: 400; line-height: 1.4; max-width: 720px; color: #333; }
-.eyebrow { font-weight: 700; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--red); margin: 0 0 8px; }
-section { padding: 64px 0; border-bottom: 1px solid var(--light); }
-h2 { font-size: 42px; font-weight: 700; letter-spacing: -0.025em; line-height: 1.1; margin: 0 0 24px; color: var(--blue); }
-h3 { font-size: 24px; font-weight: 700; letter-spacing: -0.01em; margin: 32px 0 12px; }
-.specimen { background: var(--light); border-radius: 12px; padding: 48px; margin: 24px 0; }
+.logo-word { font-weight: 700; font-size: 18px; color: var(--blue); }
+h1 { font-size: 42px; font-weight: 700; line-height: 1.15; margin: 16px 0 12px; color: var(--blue); }
+.lead { font-size: 16px; line-height: 1.6; max-width: 720px; }
+.eyebrow { font-weight: 700; font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--red); margin: 0 0 8px; }
+section { padding: 56px 0; border-bottom: 1px solid var(--light); }
+h2 { font-size: 30px; font-weight: 700; line-height: 1.2; margin: 0 0 24px; color: var(--blue); }
+h3 { font-size: 22px; font-weight: 700; line-height: 1.3; margin: 32px 0 12px; color: var(--blue); }
+.specimen { background: var(--light); border-radius: 8px; padding: 40px; margin: 20px 0; }
 .specimen.dark { background: var(--blue); color: var(--white); }
-.specimen.dark h2, .specimen.dark h3 { color: var(--white); }
-.big { font-size: 96px; font-weight: 700; line-height: 0.9; letter-spacing: -0.04em; margin: 0; }
-.regular { font-weight: 400; }
-.medium { font-weight: 500; }
-.semibold { font-weight: 600; }
-.bold { font-weight: 700; }
-.tight { letter-spacing: -0.03em; }
-.note { font-size: 15px; color: #555; margin-top: 8px; }
+.display { font: 700 65px/1.05 "Matter", sans-serif; color: var(--blue); margin: 0; }
+.h1 { font: 700 42px/1.15 "Matter", sans-serif; color: var(--blue); margin: 0; }
+.h2 { font: 700 30px/1.2 "Matter", sans-serif; color: var(--blue); margin: 0; }
+.h3 { font: 700 22px/1.3 "Matter", sans-serif; color: var(--blue); margin: 0; }
+.label { font: 700 18px/1.3 "Matter", sans-serif; color: var(--blue); margin: 0; }
+.body { font: 400 16px/1.6 "Matter", sans-serif; margin: 0; }
+.caption { font: 400 13px/1.4 "Matter", sans-serif; color: #555; margin: 0; }
+.note { font-size: 13px; line-height: 1.4; color: #555; margin-top: 8px; }
 .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
-@media (max-width: 800px) { .grid { grid-template-columns: 1fr; } h1 { font-size: 48px; } .big { font-size: 64px; } }
-.compare { display: flex; gap: 40px; flex-wrap: wrap; }
-.compare > div { flex: 1; min-width: 280px; }
-footer { padding: 40px 0; font-size: 14px; color: #666; }
+@media (max-width: 800px) { .grid { grid-template-columns: 1fr; } }
+footer { padding: 40px 0; font-size: 13px; color: #666; }
 a { color: var(--blue); }
-.rec { background: #D1D8E1; border-left: 4px solid var(--blue); padding: 16px 20px; border-radius: 0 8px 8px 0; margin: 24px 0; }
+.scale-row { display: flex; justify-content: space-between; align-items: baseline; padding: 12px 0; border-bottom: 1px solid var(--light); }
+.scale-row:last-child { border-bottom: 0; }
 </style>
 </head>
 <body>
 <header class="wrap">
   <div class="logo-word">Marshall Radio Telemetry</div>
-  <p class="eyebrow">Typography Lab · Version 2</p>
-  <h1>Crisp & professional.</h1>
-  <p class="lead">Recommended MatterXH faces for a sharp, premium brand presence. High contrast + tight display tracking makes the type stand out.</p>
+  <p class="eyebrow">Brand Guidelines</p>
+  <h1>Typography</h1>
+  <p class="lead">Matter Regular (400) and Matter Bold (700) only. Follow the type scale exactly. Fallback is Helvetica Neue / Arial when Matter is not available.</p>
 </header>
 
-<div class="wrap rec">
-  <strong>Recommended professional set:</strong><br>
-  Body → Regular (400)<br>
-  UI / subheads → Medium (500) or SemiBold (600)<br>
-  Headings → Bold (700) or SemiBold (600)<br>
-  Use SemiMono only for technical data or product codes if you want a more engineered feel.
-</div>
-
 <section class="wrap">
-  <h2>Display</h2>
+  <h2>Type scale</h2>
   <div class="specimen">
-    <p class="big">Reliable range.<br>Easy recovery.</p>
-    <p class="note">Bold 700 · -0.04em tracking · line-height 0.9 — this combination feels crisp and modern.</p>
+    <div class="scale-row"><span class="display">Display</span><span class="caption">65 / 1.05 · 700</span></div>
+    <div class="scale-row"><span class="h1">Heading 1</span><span class="caption">42 / 1.15 · 700</span></div>
+    <div class="scale-row"><span class="h2">Heading 2</span><span class="caption">30 / 1.2 · 700</span></div>
+    <div class="scale-row"><span class="h3">Heading 3</span><span class="caption">22 / 1.3 · 700</span></div>
+    <div class="scale-row"><span class="label">Label</span><span class="caption">18 / 1.3 · 700</span></div>
+    <div class="scale-row"><span class="body">Body text for reading and UI.</span><span class="caption">16 / 1.6 · 400</span></div>
+    <div class="scale-row"><span class="caption">Caption text</span><span class="caption">13 / 1.4 · 400</span></div>
   </div>
-  <div class="specimen dark">
-    <p class="big" style="color:#fff">The most carefully<br>engineered tracking.</p>
-    <p class="note" style="color:#C6C7BB">M Blue background + Light Grey text = strong, vivid contrast.</p>
-  </div>
+  <p class="note">Exact scale from the official guidelines. No additional letter-spacing is specified.</p>
 </section>
 
 <section class="wrap">
-  <h2>Recommended weights</h2>
+  <h2>Weights</h2>
   <div class="grid">
     <div>
-      <h3 class="regular">Regular 400 — Body</h3>
-      <p class="regular" style="font-size:20px;line-height:1.55">Clear, neutral, and highly readable. The professional workhorse for body copy and long text.</p>
+      <h3>Regular 400</h3>
+      <p class="body">Used for body copy and UI text. Clear and readable.</p>
     </div>
     <div>
-      <h3 class="medium">Medium 500 — UI / Subheads</h3>
-      <p class="medium" style="font-size:20px;line-height:1.5">Adds presence without heaviness. Excellent for labels, navigation, and secondary headings.</p>
-    </div>
-    <div>
-      <h3 class="semibold">SemiBold 600 — Strong headings</h3>
-      <p class="semibold" style="font-size:20px;line-height:1.45">Crisp and authoritative. Often the sweet spot for headings that need weight but stay refined.</p>
-    </div>
-    <div>
-      <h3 class="bold">Bold 700 — Primary display</h3>
-      <p class="bold" style="font-size:20px;line-height:1.4">Maximum impact for hero headlines and key statements. Use sparingly so it stays powerful.</p>
+      <h3>Bold 700</h3>
+      <p class="body" style="font-weight:700">Used for headings, labels, and emphasis. Do not use other weights.</p>
     </div>
   </div>
 </section>
 
 <section class="wrap">
-  <h2>Color & contrast</h2>
+  <h2>Specimen</h2>
   <div class="specimen">
-    <p style="font-size:36px;font-weight:700;color:#1B3A6A;letter-spacing:-0.02em;margin:0">M Blue headings on white.</p>
-    <p style="font-size:20px;font-weight:400;color:#171D1A;line-height:1.55">Near-black body. This high-contrast pairing makes the typography stand out clearly. The existing color scheme is helping, not hurting.</p>
+    <p class="display">Reliable range.</p>
+    <p class="h1" style="margin-top:16px">Easy recovery.</p>
+    <p class="body" style="margin-top:16px">Marshall Radio Telemetry designs and supplies premium GPS long-range tracking and recovery equipment. Quality means reliability, range, and ease of use.</p>
   </div>
-  <div class="specimen" style="background:#8A2F1D;color:#F1F1F1">
-    <p style="font-size:36px;font-weight:700;margin:0;letter-spacing:-0.02em">M Red for accents only</p>
-    <p style="font-size:18px;font-weight:400">Use red sparingly (eyebrows, CTAs, highlights). Overusing it reduces the crispness of the type.</p>
+  <div class="specimen dark">
+    <p class="display" style="color:#fff">The most carefully engineered tracking system available.</p>
+    <p class="body" style="color:#F1F1F1;margin-top:16px">On dark backgrounds use Light Grey text for contrast.</p>
   </div>
 </section>
 
 <section class="wrap">
-  <h2>Verdict</h2>
+  <h2>Rules</h2>
   <ul>
-    <li><strong>Crispest professional faces:</strong> MatterXH Regular + Medium + SemiBold + Bold.</li>
-    <li><strong>Color scheme:</strong> It is helping. M Blue + near-black on white gives excellent contrast and lets the type feel vivid and premium. Keep red as a sparse accent.</li>
-    <li><strong>Tracking:</strong> Negative letter-spacing on large sizes (-0.03 to -0.04em) is the biggest visual upgrade.</li>
-    <li><strong>Avoid for body:</strong> Thin, Light, Heavy, and Black — they either look too delicate or too heavy for everyday professional use.</li>
-    <li>Fonts are currently in the repository root (paths updated). Moving them into a <code>fonts/</code> folder is cleaner if you prefer.</li>
+    <li>Use only Matter Regular (400) and Matter Bold (700).</li>
+    <li>Follow the type scale for size and line-height.</li>
+    <li>No italics except the logo artwork.</li>
+    <li>Fallback: "Helvetica Neue", Helvetica, Arial, sans-serif.</li>
+    <li>Official page: <a href="https://marshallradio.github.io/mrtbranding/brand-components/typography/">brand-components/typography</a></li>
   </ul>
 </section>
 
 <footer class="wrap">
-  <p>Marshall Radio Telemetry Typography Lab v2 · <a href="https://github.com/marshallradio/mrtbranding-v2">View source</a></p>
+  <p>Aligned to the official Marshall Radio Telemetry brand guidelines · <a href="https://github.com/marshallradio/mrtbranding-v2">Source</a></p>
 </footer>
 </body>
 </html>
